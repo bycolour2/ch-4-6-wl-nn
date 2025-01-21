@@ -72,12 +72,12 @@
 
         NextDesktop {
             bindings = <&kp LC(RIGHT)>;
-            key-positions = <38 39>;
+            key-positions = <40 41>;
         };
 
         PrevDesktop {
             bindings = <&kp LC(LEFT)>;
-            key-positions = <40 41>;
+            key-positions = <38 39>;
         };
     };
 
@@ -119,8 +119,8 @@
 &kp ESC    &kp N1              &kp N2             &kp N3          &kp N4               &kp N5   &kp N6 &kp N7              &kp N8         &kp N9             &kp N0                &kp BACKSPACE
 &kp GRAVE  &kp Q               &kp W              &kp E           &kp R                &kp T    &kp Y  &kp U               &kp I          &kp O              &kp P                 &kp LEFT_BRACKET
 &kp TAB    &kp A               &kp S              &kp D           &kp F                &kp G    &kp H  &kp J               &kp K          &kp L              &kp SEMI              &kp APOS
-&mo 3      &kp Z               &kp X              &kp C           &kp V                &kp B    &kp N  &kp M               &kp COMMA      &kp DOT            &kp FSLH              &mo 5
-           &kp LCTRL            &kp SPACE          &mo 5           &mo 2                &kp LGUI                           &mo 1      &kp RET     &kp LSHFT
+&mo 5      &kp Z               &kp X              &kp C           &kp V                &kp B    &kp N  &kp M               &kp COMMA      &kp DOT            &kp FSLH              &mo 3
+           &kp LCTRL            &kp SPACE          &mo 1           &mo 2                &kp LGUI                           &mo 1      &kp RET     &kp LSHFT
             >;
         };
 
@@ -130,7 +130,7 @@
 &sys_reset   &trans    &kp UP    &trans     &trans  &trans                 &kp N1       &trans  &trans  &trans   &trans     &sys_reset
 &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans                 &trans       &trans  &trans  &trans   &trans     &trans
 &bootloader  &trans    &trans    &trans     &trans  &bt BT_CLR             &bt BT_CLR_ALL   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4     &bootloader
-             &trans  &trans  &trans  &lt 3 BACKSPACE &kp LSHFT             &trans       &trans  &trans
+             &trans  &kp LC(SPACE)  &trans  &lt 3 BACKSPACE &kp LSHFT             &trans       &trans  &trans
             >;
         };
 
@@ -146,11 +146,12 @@
 
         FUN {
             bindings = <
-&trans        &trans            &trans             &trans           &trans        &trans           &trans  &trans  &trans  &trans  &trans   &trans
-&trans        &trans            &trans             &trans           &trans        &trans           &kp F1  &kp F2  &kp F3  &kp F4  &trans   &trans
-&out OUT_TOG  &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp LALT         &kp F5  &kp F6  &kp F7  &kp F8  &kp DEL  &trans
-&trans        &trans            &trans             &trans           &trans        &trans           &kp F9  &kp F10 &kp F11 &kp F12 &trans   &to 0
-                         &trans   &trans   &trans     &trans        &trans                         &trans  &trans  &trans
+&trans      &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans      &trans      &trans
+&kp F1      &kp F2      &kp F3      &kp F4      &trans      &trans            &trans      &trans      &trans      &trans      &trans      &trans
+&kp F5      &kp F6      &kp F7      &kp F8      &kp DEL     &trans            &out OUT_TOG           &kp K_PLAY_PAUSE       &kp C_VOLUME_DOWN       &kp C_VOLUME_UP       &kp C_MUTE       &kp LALT
+&kp F9      &kp F10     &kp F11     &kp F12     &trans      &to 0             &trans      &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans            &trans            &trans      &trans
+
             >;
         };
 
@@ -160,7 +161,7 @@
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans &trans  &trans &trans
+                        &trans    &mkp LCL &mkp RCLK    &trans  &trans &trans  &trans &trans
             >;
         };
 
