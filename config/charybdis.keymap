@@ -148,7 +148,7 @@
         FUN {
             bindings = <
 &trans      &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans      &trans      &trans
-&kp F1      &kp F2      &kp F3      &kp F4      &trans      &trans            &trans      &trans      &trans      &trans      &trans      &trans
+&kp F1      &kp F2      &kp F3      &kp F4      &trans      &trans            ц
 &kp F5      &kp F6      &kp F7      &kp F8      &kp DEL     &trans            &out OUT_TOG           &kp K_PLAY_PAUSE       &kp C_VOLUME_DOWN       &kp C_VOLUME_UP       &kp C_MUTE       &kp LALT
 &kp F9      &kp F10     &kp F11     &kp F12     &trans      &to 0             &trans      &trans      &trans      &trans      &trans      &trans
             &trans      &trans      &trans      &trans      &trans            &trans            &trans      &trans
@@ -162,7 +162,7 @@
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans    &mkp LCL &mkp RCLK    &trans  &trans &trans  &trans &trans
+                        &trans    &mkp LCLK &mkp RCLK    &trans  &trans &trans  &trans &trans
             >;
         };
 
