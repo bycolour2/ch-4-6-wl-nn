@@ -73,6 +73,16 @@
             bindings = <&caps_word>;
             key-positions = <17 18>;
         };
+        
+        NextDesktop {
+            bindings = LC(RIGHT);
+            key-positions = <38 39>;
+        };
+
+        PrevDesktop {
+            bindings = LC(LEFT);
+            key-positions = <40 41>;
+        };
     };
 
     behaviors {
@@ -116,7 +126,7 @@
 &mo 3      &kp Z               &kp X              &kp C           &kp V                &kp B    &kp N  &kp M               &kp COMMA      &kp DOT            &kp FSLH              &mo 5
            &kp LCTRL            &kp SPACE          &mo 5           &mo 2                &kp LGUI                           &mo 1      &kp RET     &kp LSHFT
             >;
-        }
+        };
 
         NAV {
             bindings = <
