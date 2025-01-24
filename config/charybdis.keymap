@@ -80,12 +80,6 @@
             bindings = <&kp LC(LEFT)>;
             key-positions = <38 39>;
         };
-
-        VSCodeAutocomplete {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <52 55>;
-            layers = <0>;
-        };
     };
 
     behaviors {
