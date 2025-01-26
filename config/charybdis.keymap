@@ -73,22 +73,19 @@
         NextDesktop {
             bindings = <&kp LC(RIGHT)>;
             key-positions = <40 41>;
+            timeout-ms = <100>;
         };
 
         PrevDesktop {
             bindings = <&kp LC(LEFT)>;
             key-positions = <38 39>;
+            timeout-ms = <100>;
         };
 
         VSCodeAutocomplete {
             bindings = <&kp LG(SPACE)>;
             key-positions = <49 55>;
-        };
-
-        VSCodeAutocomplete2 {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <52 55>;
-            timeout-ms = <200>;
+            timeout-ms = <100>;
         };
     };
 
