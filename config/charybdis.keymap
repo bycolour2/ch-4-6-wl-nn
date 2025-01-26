@@ -85,6 +85,12 @@
             bindings = <&kp LG(SPACE)>;
             key-positions = <49 55>;
         };
+
+        VSCodeAutocomplete2 {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <52 55>;
+            timeout-ms = <200>;
+        };
     };
 
     behaviors {
